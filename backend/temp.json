@@ -1,0 +1,20 @@
+{'step_1_define_objective': {'final_report': '', 'objective': "The user asked the following question:\nCan you find underrated 2-bedroom house units?\n\nAnd here are the details:\n- purpose: investment\n- city: Melbourne\n- rooms: 2\n- type: house\n- budget: 600k-900k\n- top_n: 10\n- method: Create a scoring function using all of the following features: price_per_sqm, building_area, how_many_cars, how_many_bathrooms, year_built, distance, type\n- etc: I'll leave it to you to figure out what are underrated items and how to create the scoring function.", 'variables': [Data(key='melbourne_housing_df', type='dataframe', description='This dataframe contains the melbourne real estate sales data from 2016 to 2017.', value=              Suburb           Address  Rooms Type      Price Method   SellerG  ... BuildingArea  YearBuilt  CouncilArea  Lattitude  Longtitude             Regionname  Propertycount
+0         Abbotsford      85 Turner St      2    h  1480000.0      S    Biggin  ...          NaN        NaN        Yarra  -37.79960   144.99840  Northern Metropolitan         4019.0
+1         Abbotsford   25 Bloomburg St      2    h  1035000.0      S    Biggin  ...         79.0     1900.0        Yarra  -37.80790   144.99340  Northern Metropolitan         4019.0
+2         Abbotsford    129 Charles St      2    h   941000.0      S    Jellis  ...          NaN        NaN        Yarra  -37.80410   144.99530  Northern Metropolitan         4019.0
+3         Abbotsford     98 Charles St      2    h  1636000.0      S    Nelson  ...        107.0     1890.0        Yarra  -37.80600   144.99540  Northern Metropolitan         4019.0
+4         Abbotsford     10 Valiant St      2    h  1097000.0      S    Biggin  ...         75.0     1900.0        Yarra  -37.80100   144.99890  Northern Metropolitan         4019.0
+...              ...               ...    ...  ...        ...    ...       ...  ...          ...        ...          ...        ...         ...                    ...            ...
+3643  Port Melbourne     201 Stokes St      2    h  1515000.0     SP  Marshall  ...          NaN        NaN          NaN  -37.83754   144.93954  Southern Metropolitan         8648.0
+3644         Prahran  17 Packington Pl      2    h  1365000.0      S    Jellis  ...        100.0     1900.0          NaN  -37.85569   145.00522  Southern Metropolitan         7717.0
+3645       Reservoir        92 Pine St      2    u   625500.0      S        RW  ...        111.0     1960.0          NaN  -37.71626   144.99866  Northern Metropolitan        21650.0
+3646   Ringwood East     14 Everard Rd      2    h   937000.0      S    Carter  ...        116.0     1960.0          NaN  -37.80401   145.25225   Eastern Metropolitan         4407.0
+3647        Watsonia     76 Kenmare St      2    h   650000.0     PI  Morrison  ...         79.0     2006.0          NaN  -37.70657   145.07878  Northern Metropolitan         2329.0
+
+[
+                3648 rows x 21 columns
+            ])
+        ], 'skip_define_objective_step': False, 'use_human_in_the_loop': False, 'steps': [Step(order=1, name='Define the Objective', description='Understand the problem and set goals', completed=False, report=''), Step(order=2, name='Data Cleaning', description='Handle missing data, fix errors, and filter irrelevant data', completed=False, report=''), Step(order=3, name='Data Exploration', description='Summarize data and find anomalies/outliers', completed=False, report=''), Step(order=4, name='Data Analysis & Visualization', description='', completed=False, report=''), Step(order=5, name='Write Report', description='', completed=False, report='')
+        ], 'sandbox_id': ''
+    }
+}
