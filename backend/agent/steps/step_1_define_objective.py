@@ -108,6 +108,7 @@ def agent(state: StepState):
 
     else:
         # If the request is not answerable or specific, we need to ask the user for more details
+        #! TODO: this interrupt should be in a separate node because when the graph resumes, it starts from the beginning of this node, which will trigger the LLM call again.
         user_response = interrupt(
             {
                 "message_to_user": response.message_to_user,

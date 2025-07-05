@@ -166,10 +166,10 @@ o3 = ChatOpenAI(
 
 claude_4_opus = ChatAnthropic(
     model_name="claude-opus-4-20250514",
-    max_tokens_to_sample=8000,  # This should be larger then the budget tokens
     api_key=anthropic_api_key,
-    temperature=1,  # When thikning mode is on, temp should be 1
     timeout=120,
     stop=None,
-    thinking={"type": "enabled", "budget_tokens": 5000},
+    # temperature=1,  # When thikning mode is on, temp should be 1
+    # max_tokens_to_sample=8000,  # This should be larger then the budget tokens
+    # thinking={"type": "enabled", "budget_tokens": 5000},
 )

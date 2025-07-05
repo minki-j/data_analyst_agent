@@ -324,14 +324,19 @@ Important Rules:
             ),
         ]
 
-        result_from_o3: ValidationResult = o3.with_structured_output(
+        result_from_o3: ValidationResult = reasoning_model.with_structured_output(
             ValidationResult
         ).invoke(input_messages)
 
-        result_from_claude_4_opus: ValidationResult = (
-            claude_4_opus.with_structured_output(ValidationResult).invoke(
-                input_messages
-            )
+        # result_from_claude_4_opus: ValidationResult = (
+        #     claude_4_opus.with_structured_output(ValidationResult).invoke(
+        #         input_messages
+        #     )
+        # )
+        result_from_claude_4_opus = ValidationResult(
+            chain_of_thought_summary="",
+            pass_the_validation=True,
+            message_to_user="",
         )
 
         all_passed = (

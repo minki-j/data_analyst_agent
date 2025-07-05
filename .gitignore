@@ -34,3 +34,6 @@ yarn-error.log*
 
 # Analysis results
 results/
+
+#videos
+*.mov
