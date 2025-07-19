@@ -221,3 +221,6 @@ g.add_node(write_step_report, retry=retry_policy)
 g.add_edge(write_step_report.__name__, END)
 
 g = g.compile()
+
+with open("step_4_data_analysis.png", "wb") as f:
+    f.write(g.get_graph().draw_mermaid_png())

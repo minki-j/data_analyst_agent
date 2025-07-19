@@ -189,3 +189,7 @@ g.add_edge("checklist_validator", rendevous.__name__)
 g.add_node(rendevous, destinations=(agent.__name__, END), retry=retry_policy)
 
 g = g.compile()
+
+
+with open("step_1_define_objective.png", "wb") as f:
+    f.write(g.get_graph().draw_mermaid_png())

@@ -87,3 +87,7 @@ g = g.compile(
     #     "step_5_write_report",
     # ],
 )
+
+
+with open("entry_graph.png", "wb") as f:
+    f.write(g.get_graph().draw_mermaid_png())

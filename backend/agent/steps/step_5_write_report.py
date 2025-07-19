@@ -91,3 +91,6 @@ g.add_edge(START, agent.__name__)
 g.add_node(agent, retry=retry_policy)
 
 g = g.compile()
+
+with open("step_5_write_report.png", "wb") as f:
+    f.write(g.get_graph().draw_mermaid_png())
